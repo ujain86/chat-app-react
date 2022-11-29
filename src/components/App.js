@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from 'react';
-import LeftPanel from './LeftPanel';
-import RightPanel from './RightPanel';
-// import file from '../data';
 import { Routes, Route } from 'react-router-dom';
+import {Provider} from 'react-redux';
+
 import ChatApp from './ChatApp';
+import store from '../store/store';
 
 function App() {
 
   return (
     <div className='App'>
 
+      <Provider store={store}>
       <Routes>
-        <Route path='/' element={ <ChatApp /> }></Route>
+        <Route path='/chat-app-react' element={ <ChatApp /> }></Route>
       </Routes>
       
+    </Provider>
       
     </div>
   )

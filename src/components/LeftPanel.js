@@ -4,8 +4,8 @@ import ChatLog from './ChatLog';
 
 function LeftPanel(props) {
 
-  const data = props;
-  // console.log(data.data.profile.friends[0]);
+  const {data, data2} = props;
+  console.log('data2: ',data2);
   return (
     <div className='left-panel'>
 
@@ -13,9 +13,9 @@ function LeftPanel(props) {
 
         <h5>CONVERSATIONS</h5>
 
-        {data.data.profile.friends.map( (item, index) => {
+        {data2?data2.profile.friends.map( (item, index) => {
           return <ChatLog item={item} key={index}/>
-        })}
+        }):""}
     
     
     </div>
