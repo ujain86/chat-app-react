@@ -12,12 +12,6 @@ function ChatApp() {
 
   const dispatch = useDispatch();
 
-  // const handleAdd = () => {
-
-      // dispatch(add({name: 'Ujjwal'}));
-
-  // }
-
   //dispatch method of redux toolkit to add data in redux
   useEffect(()=>{
     dispatch(add(file));
@@ -35,8 +29,6 @@ function ChatApp() {
         
         <LeftPanel data={data} data2={data2}/>
         <RightPanel /> 
-
-        {/* <button onClick={handleAdd}>Add</button> */}
         
     </div>
   )

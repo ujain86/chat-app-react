@@ -25,41 +25,23 @@ const chatSlice = createSlice({
         // state.push(action.payload);
         },
         addChatLog(state, action) {
-            // return { ...state, [2]: action.payload}
-            // return {
-            //     ...state,
-            //     [0].friends.map((item) => {
-            //         if(item.id == 2){
-            //             item.chatlog.push(action.payload);
-            //         }
-            //     } )
-            // }
-            let newState = {...state};
-
+            let newState = state;
             let tempID = state[1].chatID; 
             console.log('tempid',tempID);
             let newFriends = newState[0].friends;
-            console.log(newFriends);
-            
-            newState[0].friends.forEach((item) => {
-                if(item.id == tempID){
-                    item.chatlog.push(action.payload);
+            // console.log(newFriends);
+            console.log('a',newFriends.length);
+            for(let i =0;i<newFriends.length;i++){
+                console.log('a',newFriends[i].id);
+                if(newFriends[i].id == tempID){
+                    newFriends[i].chatlog.push(action.payload);
+                    console.log('ok');
                 }
-            });
-            // ((item)=>{
-            //     if(item.id == tempID){
-            //         item.chatlog.push(action.payload);
-            //     }
-            //     return item;
-            // });
-
-            
+            }
             return newState;
-            // let tempA = {... state[0],friends:newFriends};
-            // console.log('tempA:',tempA);
-            // console.log(typeof(state));
-            // return {... state,0:tempA};
+    
         },
+        
     },
 });
 
