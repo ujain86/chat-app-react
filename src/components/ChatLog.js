@@ -28,7 +28,7 @@ function ChatLog(props) {
       </div>
       
       <div className='name-div'>
-        <p>{props.item.name}</p>
+        <p style={{fontWeight: 'bold'}}>{props.item.name}</p>
         <p>{props.item.chatlog[props.item.chatlog.length - 1].text}</p>
       </div>
 

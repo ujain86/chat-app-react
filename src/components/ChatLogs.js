@@ -6,7 +6,7 @@ function ChatLogs(props) {
         <p>
             {props.item.text}
         </p>
-        <h6> {props.item.timestamp}</h6>
+        <h6 style={{marginLeft: 8}}> {props.item.timestamp}</h6>
     </div>
   )
 }

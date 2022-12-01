@@ -184,12 +184,28 @@ const file ={
           },
         ]
       },
-      {
-        "id": 4,
-        "name": "Luke",
-        "picture": "https://image.ibb.co/jOzeUG/luke_1.jpg",
-        "chatlog": []
-      },
+      // {
+      //   "id": 4,
+      //   "name": "Banta",
+      //   "picture": "https://pps.whatsapp.net/v/t61.24694-24/312270288_827933381868675_5696829891933563032_n.jpg?ccb=11-4&oh=01_AdSjnosmvGucNaZWS5Jf-JgFMZuKzPNWyGZdnDTP21fuCw&oe=63957DEF",
+      //   "chatlog": [
+      //     {
+      //       "text":
+      //         "Kaku, sun na yr",
+      //       "timestamp": "10:05 AM",
+      //     },
+      //     {
+      //       "text":
+      //         "Please vapas aja",
+      //       "timestamp": "10:06 AM",
+      //     },
+      //     {
+      //       "text":
+      //         "I really love you :'( <3",
+      //       "timestamp": "10:06 AM",
+      //     }
+      //   ]
+      // },
       {
         "id": 5,
         "name": "Bane",
@@ -198,7 +214,11 @@ const file ={
           {
           "text": "Hi",
           "timestamp": "07:05 AM",
-          }
+          },
+          {
+            "text": "How are you",
+            "timestamp": "07:06 AM",
+            }
         ]
       },
       {
