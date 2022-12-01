@@ -38,6 +38,7 @@ code {
   border: 1px solid rgba(128, 128, 128, 0.134);
   width: 70vw;
   background-color: rgba(255, 255, 255, 0.668);
+  overflow: hidden;
 }
 
 .search-bar{
@@ -60,9 +61,135 @@ code {
   opacity: 0.5;
 }
 
+.chat-log{
+  display: flex;
+  justify-content: space-around;
+  height: 70px;
+  width: 100%;
+  /* border: 1px solid black; */
+  border: 1px solid rgba(128, 128, 128, 0.134);
+  cursor: pointer;
+}
+
+.chat-log img{
+  height: 100%;
+  width: 50px;
+  border-radius: 50px;
+}
+
+.chat-log div{
+  height: 100%;
+  /* width: auto; */
+  /* margin: 0; */
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  /* border: 1px solid blue; */
+}
+
+.img-div{
+  width: 15%;
+  padding: 10px;
+}
+
+.name-div{
+  width: 70%;
+  /* line-height: 10px; */
+  line-height: 1rem;
+  
+}
+
+.name-div p{
+  /* line-height: 0.5rem; */
+    height: 26%;
+    
+    white-space: nowrap;
+    max-width: 30ch;
+    overflow: hidden;
+    text-overflow:ellipsis ;
+    font-size: smaller;
+    margin-top: 8px;
+    margin-bottom: 14px;
+}
+
+.time-div{
+  display: flex;
+  align-items: flex-start;
+  font-size: x-small;
+  width: 15%;
+}
+
+.time-div p{
+ margin-top: 8px;
+  
+}
+
 .header{
 
   height: 10%;
   width: 100%;
   border: 1px solid rgba(128, 128, 128, 0.134);
+  
 }
+
+.header div{
+  display: flex;
+}
+
+.header-child-div img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  margin: 10px;
+}
+
+.header-child-div h2{
+  margin: 18px;
+}
+
+.chat-logs{
+  width: 60%;
+  height: auto;
+  /* border: 1px solid blue; */
+  background-color: rgba(255, 255, 255, 0.69);
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.chat-logs p {
+  margin-top: 0px;
+  padding: 8px;
+}
+
+.scroll{
+  overflow: auto;
+  height: 70%;
+  width: 120%;
+  padding: 10px;
+}
+
+.message-input-div {
+  margin-top: 20px;
+  height: 10%;
+  /* border: 1px solid black; */
+  width: 98%;
+  margin: 10px;
+  background-color: white;
+}
+
+.message-input-div input{
+  border: none;
+  height: 80%;
+  width: 80%;
+  padding: 20px;
+  margin: 10px;
+}
+
+.message-input-div button{
+  height: 80%;
+  background-color: black;
+  color: white;
+  width: 10%;
+  padding: 20px;
+  margin: 10px;
+}
+

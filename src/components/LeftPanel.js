@@ -13,8 +13,10 @@ function LeftPanel(props) {
 
         <h5>CONVERSATIONS</h5>
 
-        {data2?data2.profile.friends.map( (item, index) => {
+        {data2?data2.friends.map( (item, index) => {
+          if(item.chatlog.length > 0){
           return <ChatLog item={item} key={index}/>
+          }
         }):""}
     
     
