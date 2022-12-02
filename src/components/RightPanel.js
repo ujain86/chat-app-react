@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import Header from './Header';
 import {useDispatch, useSelector} from 'react-redux';
 import ChatLogs from './ChatLogs';
@@ -13,6 +13,8 @@ function RightPanel() {
 
   const [text, setText] = useState("");
 
+  const newRef = useRef();
+
   
 
   const handleSendMessage = (e) => {
@@ -20,15 +22,24 @@ function RightPanel() {
     console.log('text: ',text);
     let date = Date();
     let time = date.slice(16, 21);
-    dispatch(addChatLog({"text": text, "timestamp": time}));
-    // setText("");
+    if(text != ""){
+      dispatch(addChatLog({"text": text, "timestamp": time}));
+    }
+    else{
+      alert("Cannot send blank messages");
+    }
+
+    setText("");
+    // newRef.scrollTo(0,9999);
+    // newRef.scollTop = newRef.scrollHeight;
+    console.log("newref:",newRef)
   };
 
   return (
 
     <div className='right-panel'>
         <Header />
-        <div className='scroll'>
+        <div className='scroll' ref={newRef}>
           
         {items[0] && items[1] ?items[0].friends.map(item => {
           if(item.id == items[1].chatID ){
@@ -52,7 +63,7 @@ function RightPanel() {
         {items[1]?
         <div className='message-input-div'>
           <form onSubmit={handleSendMessage}>
-            <input 
+            <input id='inputtag' value={text}
               onChange={ (e) => {
                 setText(e.target.value); 
                 }

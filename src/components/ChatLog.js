@@ -42,3 +42,4 @@ function ChatLog(props) {
 }
 
 export default ChatLog;
+// export {setChatID}; 

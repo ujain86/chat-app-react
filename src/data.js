@@ -283,12 +283,12 @@ const file ={
       }
     ],
     "allFriends": [
-      {
-        "id": 16,
-        "name": "A'Koba",
-        "picture": "",
-        "status": "Available"
-      },
+      // {
+      //   "id": 16,
+      //   "name": "A'Koba",
+      //   "picture": "",
+      //   "status": "Available"
+      // },
       {
         "id": 15,
         "name": "Zen",
@@ -373,162 +373,162 @@ const file ={
         "picture": "https://image.ibb.co/cA2oOb/alex_1.jpg",
         "status": "Busy"
       },
-      {
-        "id": 17,
-        "name": "Almec",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 18,
-        "name": "Raymus Antilles",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 19,
-        "name": "Doctor Aphra",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 20,
-        "name": "Ello Asty",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 21,
-        "name": "Kitster Banai",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 22,
-        "name": "Barada",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 23,
-        "name": "Depa Billaba",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 24,
-        "name": "Temiri Blagg",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 25,
-        "name": "Mina Bonteri",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 26,
-        "name": "Rush Clovis",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 27,
-        "name": "Commander Cody",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 28,
-        "name": "Joclad Danva",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 29,
-        "name": "Vober Dand",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 30,
-        "name": "Daultay Dofine",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 31,
-        "name": "Caluan Ematt",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 32,
-        "name": "Rune Haako",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 33,
-        "name": "Wes Janson",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 34,
-        "name": "Harter Kalonia",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 35,
-        "name": "Maz Kanata",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 36,
-        "name": "Owen Lars",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 37,
-        "name": "Bazine Netal",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 38,
-        "name": "Darth Plagueis",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 39,
-        "name": "Sana Starros",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 40,
-        "name": "Jova Tarkin",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 41,
-        "name": "Wat Tambor",
-        "picture": "",
-        "status": "Busy"
-      },
-      {
-        "id": 42,
-        "name": "Quinlan Vos",
-        "picture": "",
-        "status": "Busy"
-      }
+      // {
+      //   "id": 17,
+      //   "name": "Almec",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 18,
+      //   "name": "Raymus Antilles",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 19,
+      //   "name": "Doctor Aphra",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 20,
+      //   "name": "Ello Asty",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 21,
+      //   "name": "Kitster Banai",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 22,
+      //   "name": "Barada",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 23,
+      //   "name": "Depa Billaba",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 24,
+      //   "name": "Temiri Blagg",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 25,
+      //   "name": "Mina Bonteri",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 26,
+      //   "name": "Rush Clovis",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 27,
+      //   "name": "Commander Cody",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 28,
+      //   "name": "Joclad Danva",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 29,
+      //   "name": "Vober Dand",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 30,
+      //   "name": "Daultay Dofine",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 31,
+      //   "name": "Caluan Ematt",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 32,
+      //   "name": "Rune Haako",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 33,
+      //   "name": "Wes Janson",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 34,
+      //   "name": "Harter Kalonia",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 35,
+      //   "name": "Maz Kanata",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 36,
+      //   "name": "Owen Lars",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 37,
+      //   "name": "Bazine Netal",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 38,
+      //   "name": "Darth Plagueis",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 39,
+      //   "name": "Sana Starros",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 40,
+      //   "name": "Jova Tarkin",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 41,
+      //   "name": "Wat Tambor",
+      //   "picture": "",
+      //   "status": "Busy"
+      // },
+      // {
+      //   "id": 42,
+      //   "name": "Quinlan Vos",
+      //   "picture": "",
+      //   "status": "Busy"
+      // }
     ]
   }
 

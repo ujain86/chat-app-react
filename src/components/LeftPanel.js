@@ -8,17 +8,23 @@ function LeftPanel(props) {
   const [add, setAdd] = useState(false);
 
   const handleAdd = () => {
-    setAdd(true);
+    if(add){
+    setAdd(false);
+    }
+    else{
+      setAdd(true);
+    }
   };
 
   const {data, data2} = props;
   console.log('data2: ',data2);
   return (
     <div className='left-panel'>
-
+        <div className='left-header'>
         <SearchBar />
-        {/* <button onClick={handleAdd}> + </button>
-        {add?<AddConversation/>:""} */}
+        <button onClick={handleAdd}> + </button>
+        {add?<AddConversation setAdd={setAdd} />:""}
+        </div>
         <h5>CONVERSATIONS</h5>
 
         {data2?data2.friends.map( (item, index) => {
@@ -34,4 +40,4 @@ function LeftPanel(props) {
   )
 }
 
-export default LeftPanel
+export default LeftPanel;
