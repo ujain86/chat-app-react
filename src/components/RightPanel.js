@@ -13,8 +13,6 @@ function RightPanel() {
 
   const [text, setText] = useState("");
 
-  const newRef = useRef();
-
   //handling send message through this function
 
   const handleSendMessage = (e) => {
@@ -38,7 +36,7 @@ function RightPanel() {
         <Header />
         <div className='scroll'>
           
-        //if theer is data in items[0] and items[1], then redner below, else ""(nothing)
+        {/* if there is data in items[0] and items[1], then redner below, else ""(nothing) */}
         {items[0] && items[1] ?items[0].friends.map((item, index) => {
           if(item.id == items[1].chatID ){
              return (
