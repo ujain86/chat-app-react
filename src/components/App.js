@@ -12,7 +12,7 @@ function App() {
 
       <Provider store={store}>
       <Routes>
-        <Route path='/chat-app-react' element={ <ChatApp /> }></Route>
+        <Route path='/' element={ <ChatApp /> }></Route>
       </Routes>
       
     </Provider>
