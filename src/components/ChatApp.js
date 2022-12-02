@@ -12,22 +12,20 @@ function ChatApp() {
 
   const dispatch = useDispatch();
 
-  //dispatch method of redux toolkit to add data in redux
+  //using dispatch method of redux toolkit to add data in redux
+
   useEffect(()=>{
     dispatch(add(file));
   },[])
   
-  
-
-  //Rest
-  const [data, setData] = useState(file);
-  const data2 = useSelector((state) => state.chat[0]);
+  //Fetching state from redux
+  const data = useSelector((state) => state.chat[0]);
   
 
   return (
     <div className='chat-app'>
         
-        <LeftPanel data={data} data2={data2}/>
+        <LeftPanel data2={data}/>
         <RightPanel /> 
         
     </div>

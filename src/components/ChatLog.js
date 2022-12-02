@@ -6,6 +6,7 @@ function ChatLog(props) {
 
   const dispatch = useDispatch();
 
+  //Adding new data in redux state, if clicked
   const setChatID = () => {
     dispatch(addID({
       chatID: props.item.id,
@@ -42,4 +43,3 @@ function ChatLog(props) {
 }
 
 export default ChatLog;
-// export {setChatID}; 

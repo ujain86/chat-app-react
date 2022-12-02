@@ -9,6 +9,7 @@ function AddConversation(props) {
 
     const dispatch = useDispatch();
 
+    //Adding new data in redux state, if clicked
     const setChatID = (item) => {
         dispatch(addID({
         chatID: item.id,
@@ -20,9 +21,9 @@ function AddConversation(props) {
     }
     return (
         <div className='add-convo'>
-            {items[0].allFriends.map((item) => {
+            {items[0].allFriends.map((item, index) => {
                 return (
-                    <div onClick={() => setChatID(item)} className='new-contact'>
+                    <div key={index} onClick={() => setChatID(item)} className='new-contact'>
                         <img src={item.picture}></img>
                         <p>{item.name}</p>
                     </div>

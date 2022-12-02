@@ -27,15 +27,15 @@ const chatSlice = createSlice({
         addChatLog(state, action) {
             let newState = state;
             let tempID = state[1].chatID; 
-            console.log('tempid',tempID);
+            // console.log('tempid',tempID);
             let newFriends = newState[0].friends;
             // console.log(newFriends);
             console.log('a',newFriends.length);
             for(let i =0;i<newFriends.length;i++){
-                console.log('a',newFriends[i].id);
+                // console.log('a',newFriends[i].id);
                 if(newFriends[i].id == tempID){
                     newFriends[i].chatlog.push(action.payload);
-                    console.log('ok');
+                    // console.log('ok');
                 }
             }
             return newState;

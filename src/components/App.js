@@ -10,6 +10,7 @@ function App() {
   return (
     <div className='App'>
 
+      {/* Getting store from redux */}
       <Provider store={store}>
       <Routes>
         <Route path='/' element={ <ChatApp /> }></Route>
@@ -23,31 +24,3 @@ function App() {
 
 export default App;
 
-// const [data, setData] = useState(file);
-  // console.log('file',file);
-  // const [flag, setFlag] = useState(false);
-
-  // const getData=()=>{
-  //   fetch('data.json'
-  //   ,{
-  //     headers : { 
-  //       'Content-Type': 'application/json',
-  //       'Accept': 'application/json'
-  //      }
-  //   }
-  //   )
-  //     .then(function(response){
-  //       // console.log(response)
-  //       return response.json();
-  //     })
-  //     .then(function(myJson) {
-  //       // console.log(myJson);
-  //       setData(myJson)
-  //     });
-  // }
-
-  // useEffect(()=>{
-  //   // getData();
-  //   // setFlag(true);
-  //   // console.log("data:",data);
-  // },[])

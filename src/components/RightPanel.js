@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import Header from './Header';
 import {useDispatch, useSelector} from 'react-redux';
 import ChatLogs from './ChatLogs';
@@ -6,7 +6,7 @@ import {addChatLog} from '../store/chatSlice';
 
 function RightPanel() {
 
-  //get redux toolkit
+  //using useSelector hook to fetch state from redux
 
   const items = useSelector((state) => state.chat);
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ function RightPanel() {
 
   const newRef = useRef();
 
-  
+  //handling send message through this function
 
   const handleSendMessage = (e) => {
     e.preventDefault();
@@ -30,28 +30,27 @@ function RightPanel() {
     }
 
     setText("");
-    // newRef.scrollTo(0,9999);
-    // newRef.scollTop = newRef.scrollHeight;
-    console.log("newref:",newRef)
   };
 
   return (
 
     <div className='right-panel'>
         <Header />
-        <div className='scroll' ref={newRef}>
+        <div className='scroll'>
           
-        {items[0] && items[1] ?items[0].friends.map(item => {
+        //if theer is data in items[0] and items[1], then redner below, else ""(nothing)
+        {items[0] && items[1] ?items[0].friends.map((item, index) => {
           if(item.id == items[1].chatID ){
              return (
-              // <h1>{item.name}</h1>
-              item.chatlog.map((chatLog) => {
+              <div key={index}>
+              {item.chatlog.map((chatLog, index) => {
                 return(
                   <div>
-                    <ChatLogs item={chatLog}/>
+                    <ChatLogs item={chatLog} key={index} />
                   </div>
                 ) 
-              })
+              })}
+              </div>
              )
           }
         }):<div className='empty-convo'>
