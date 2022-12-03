@@ -12,12 +12,14 @@ function App() {
 
       {/* Getting store from redux */}
       <Provider store={store}>
-      <Routes>
-        <Route path='/' element={ <ChatApp /> }></Route>
-      </Routes>
+        {/* <Routes>
+          <Route path='/' element={ <ChatApp /> }></Route>
+          <Route path="*" element={<h1> 404! Page not Found</h1>} />
+        </Routes> */}
+      <ChatApp />
+      </Provider> 
       
-    </Provider>
-      
+        
     </div>
   )
 }

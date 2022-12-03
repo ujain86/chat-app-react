@@ -17,7 +17,7 @@ function RightPanel() {
 
   const handleSendMessage = (e) => {
     e.preventDefault();
-    console.log('text: ',text);
+    // console.log('text: ',text);
     let date = Date();
     let time = date.slice(16, 21);
     if(text != ""){
@@ -60,7 +60,7 @@ function RightPanel() {
         {items[1]?
         <div className='message-input-div'>
           <form onSubmit={handleSendMessage}>
-            <input id='inputtag' value={text}
+            <input id='inputtag' value={text} autoComplete='off'
               onChange={ (e) => {
                 setText(e.target.value); 
                 }
