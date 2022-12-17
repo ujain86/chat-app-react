@@ -1,13 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react';
 
-function SearchBar() {
+function SearchBar(props) {
+
+  const handleSearchInput = (e) => {
+    props.setSearchInput(e.target.value);
+    console.log(props.SearchInput);
+  }
   return (
     <div className='search-bar'>
         
-        <input placeholder='Search for Conversation' />
-    
+        <input type='search' placeholder='Search for Conversation' onChange={handleSearchInput}/>
+  
     </div>
   );
 }
+
 
 export default SearchBar;
