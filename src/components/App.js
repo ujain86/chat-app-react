@@ -13,14 +13,14 @@ function App() {
       {/* Getting store from redux */}
       
       <Provider store={store}>
-        <BrowserRouter>        
+        {/* <BrowserRouter>        
           <Routes>
             <Route path='/chat-app-react' element={ <ChatApp /> }></Route>
             <Route path="*" element={<h1> 404! Page not Found</h1>} />
           </Routes>
-        </BrowserRouter>
+        </BrowserRouter> */}
 
-      {/* <ChatApp /> */}
+      <ChatApp />
       </Provider> 
       
         
